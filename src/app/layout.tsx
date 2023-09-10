@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} flex flex-col w-full items-center justify-center`}>
+      <body className={`${montserrat.className} px-6 xl:px-0 flex flex-col w-full items-center justify-center`}>
         <Header />
         {children}
         <Footer />
