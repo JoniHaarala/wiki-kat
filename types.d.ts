@@ -1,3 +1,5 @@
+export type BreedProps = Breed[]
+
 export type Breed = {
     weight: Weight
     id: string
