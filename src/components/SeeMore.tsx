@@ -5,6 +5,7 @@ export const SeeMore = () => {
     <div>
       <p>Most Searched Breeds</p>
       <h2>66+ Breeds For you to discover</h2>
+      
     </div>
   )
 }
