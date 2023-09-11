@@ -21,10 +21,14 @@ export default function BreedListPage() {
     return (
         <main className='flex flex-col justify-center'>
             <h1 className='mt-24 text-2xl font-semibold uppercase px-5'>Breeds chart list</h1>
-            <section className='grid mt-14 mb-10 gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
+            <section className='grid mt-14 mb-10 gap-3 md:gap-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5'>
                 {
                     breedData?.slice(0, loadMore).map(value => (
-                        <Link key={value.id} href={`/Description/${value.id}`} >
+                        <Link
+                            key={value.id}
+                            href={`/Description/${value.id}`}
+                            className='bg-slate-200 transition-all hover:bg-slate-500 p-3 rounded-lg shadow-md'
+                        >
                             <Image
                                 src={`https://cdn2.thecatapi.com/images/${value.reference_image_id}.jpg`}
                                 alt={value.name}
