@@ -1,3 +1,4 @@
+'use client'
 import { Suspense } from 'react'
 import { Similar } from '../Similar'
 import { Information } from '../Information'
@@ -8,12 +9,13 @@ type ParamsProps = {
     id: string
   }
 }
+
 export default function page({ params }: ParamsProps) {
   console.log(params.id)
   return (
     <Suspense fallback={<CircularProgress size={200} />}>
-      <Information />
-      <Similar />
+      <Information catId={params.id} />
+      <Similar catId={params.id} />
     </Suspense>
   )
 }

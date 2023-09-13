@@ -46,3 +46,12 @@ export type Weight = {
     imperial: string
     metric: string
 }
+
+export type ImgResult = Images[]
+
+export type Images = {
+    id: string
+    url: string
+    width: number
+    height: number
+}
