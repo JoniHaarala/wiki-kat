@@ -37,7 +37,7 @@
 
 ## Overview
 
-![app screenshot](./public/qwerty.png)
+![app screenshot](./public/readmeimg.png)
 
 - Where can I see your demo?
 In this demo you will be able to see a complete web site where you can search for a cat Breed located in our database and see the information and features of the breed. Also see the you have a list selection page where you can explore all the available options.
