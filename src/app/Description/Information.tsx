@@ -62,7 +62,7 @@ export const Information = ({ catId }: CatidProps) => {
         height={300}
         alt={`${detailData?.name} img`}
         priority={true}
-        className='w-80 h-80 object-cover hidden md:block'
+        className='w-80 h-80 object-cover rounded-lg hidden md:block'
       />
 
       <section className='flex flex-col gap-6 pr-5'>
